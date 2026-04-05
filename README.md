@@ -1,4 +1,4 @@
-# 🌍 AI Micro-Investment & Financial Stability Agent for African Users
+#  AI Micro-Investment & Financial Stability Agent for African Users
 
 > A reinforcement learning agent that learns optimal financial decision-making strategies for low-to-middle income African households — managing income allocation, debt reduction, investment growth, and survival through economic shocks.
 
@@ -198,17 +198,4 @@ python main.py --api
 
 ---
 
-## 📹 Video Demo Checklist
 
-- [ ] Camera on, full screen shared
-- [ ] State the problem briefly
-- [ ] Explain reward structure
-- [ ] Show agent behavior
-- [ ] Run simulation with terminal + GUI
-- [ ] Explain agent performance
-
----
-
-## 📄 License
-
-MIT License — Academic project for ALU/AIMS RL course.
