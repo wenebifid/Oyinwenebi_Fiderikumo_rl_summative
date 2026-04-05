@@ -1,0 +1,11 @@
+run_id,description,learning_rate,gamma,buffer_size,batch_size,learning_starts,exploration_fraction,exploration_final_eps,train_freq,target_update_interval,tau,net_arch,mean_reward,std_reward,training_time_s
+0,Baseline configuration,0.001,0.99,50000,64,1000,0.2,0.05,4,500,1.0,None,391.229,67.5608,294.3
+1,"Lower LR, more exploration",0.0005,0.99,50000,64,2000,0.3,0.05,4,500,1.0,None,472.0691,28.5037,322.9
+2,"Higher LR, large buffer, big batch",0.003,0.99,100000,128,1000,0.15,0.02,4,1000,1.0,None,439.756,23.6068,396.4
+3,Lower gamma (myopic agent),0.001,0.9,50000,64,1000,0.2,0.05,4,500,1.0,None,514.0887,38.9206,240.2
+4,High gamma (long-term planning),0.001,0.995,50000,64,1000,0.25,0.05,4,500,1.0,None,230.0115,58.6449,250.6
+5,"Deeper network [256,256,128]",0.001,0.99,50000,128,1000,0.2,0.05,4,500,1.0,"{'net_arch': [256, 256, 128]}",508.0595,32.7176,417.1
+6,"Small batch, frequent updates",0.001,0.99,30000,32,500,0.2,0.05,1,200,1.0,None,309.5452,49.5961,888.0
+7,"Large batch, slow target updates",0.0005,0.99,100000,256,5000,0.3,0.05,8,2000,1.0,None,473.927,48.0052,221.3
+8,Polyak (soft) target update,0.001,0.99,50000,64,1000,0.2,0.05,4,1,0.005,None,336.8387,61.317,505.9
+9,Aggressive exploration (50%),0.001,0.99,50000,64,1000,0.5,0.1,4,500,1.0,None,308.5263,59.3285,301.0
