@@ -4,7 +4,7 @@
 
 ---
 
-## 🧠 Problem Statement
+##  Problem Statement
 
 Over **60% of sub-Saharan African adults** lack access to formal financial planning tools. Volatile inflation (8–20% annually), unpredictable income, and microfinance debt traps create extreme financial instability. This project trains an RL agent to act as a **personal financial advisor**, learning to:
 
@@ -16,7 +16,7 @@ Over **60% of sub-Saharan African adults** lack access to formal financial plann
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 student_name_rl_summative/
@@ -44,7 +44,7 @@ student_name_rl_summative/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Installation
 
@@ -162,39 +162,6 @@ R = tanh(net_worth/5000)×5      — net worth growth
 | REINFORCE | Policy Gradient | `A2C` (vf_coef=0) | lr, gamma, n_steps, entropy |
 | PPO | Policy Gradient | `PPO` | lr, clip_range, n_epochs, GAE-λ |
 | A2C | Actor-Critic | `A2C` | lr, vf_coef, n_steps, GAE-λ |
-
----
-
-## 🔌 REST API
-
-```bash
-python main.py --api
-```
-
-**POST** `/predict`
-```json
-{
-  "income_normalized": 0.25,
-  "savings_ratio": 0.15,
-  "expense_ratio": 0.45,
-  "debt_ratio": 0.30,
-  "inflation_rate": 0.40,
-  "investment_value": 0.10,
-  "month_progress": 0.25,
-  "economic_shock": 0.0,
-  "financial_stress": 0.60
-}
-```
-
-**Response**:
-```json
-{
-  "action_id": 3,
-  "action_name": "Debt Repayment",
-  "algorithm": "PPO",
-  "explanation": "Agent recommends: Debt Repayment based on current financial state."
-}
-```
 
 ---
 
